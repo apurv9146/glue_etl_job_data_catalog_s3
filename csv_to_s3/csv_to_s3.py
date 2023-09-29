@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 
 
 class S3Uploader:
-    def __init__(self, region='eu-central-1'):
+    def __init__(self, region='us-east-1'):
         self.s3_client = boto3.client('s3')
         self.region = region
 
